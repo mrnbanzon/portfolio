@@ -1,21 +1,18 @@
+html {
+  min-width: 375px;
+}
+
 body {
+  padding-top: 1%;
   overflow: scroll;
-  width: 100%;
-  min-width: 370px;
-  font-size: 100%;
+  font-size: 1.1rem;
   font-family: 'Helvetica';
   color: #636e72;
 }
 
-body > div {
-  height: 80vh;
-  margin: 0 1%;
-}
-
 header {
   position: absolute;
-  right: 1%;
-  top: 0;
+  right: 1.5em;
   font-weight: bold;
   color: #b2bec3;
 }
@@ -23,51 +20,93 @@ header {
 nav ul {
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 nav ul li {
-  margin-left: 1em;
+  margin-left: 1.1rem;
+}
+
+h1, h2 {
+  font-weight: bold;
+  color: #2d3436;
 }
 
 h1 {
-  font-size: 45px;
-  font-weight: bold;
-  color: #2d3436;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 a {
   color: inherit;
 }
 
+footer {
+  height: 20vh;
+  background-color: #00cec9;
+}
+
+.name {
+  margin: 0 1.5em;
+}
+
 .welcome {
+  width: 90vw;
+  height: 80%;
+  margin: auto 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1;
-}
-
-.welcome > div {
-  margin: 1vw; 
+  text-align: center;
 }
 
 .welcome h1 {
-  font-size: 85px;
+  font-size: 5.85rem;
 }
 
 .welcome__img img {
-  width: 200px;
+  width: 13rem;
   border-radius: 50%;
 }
 
+.skills__overview {
+  height: 110vh;
+  background-color: #00cec9;
+}
+
+.skills__list {
+  position: relative;
+  top: -40vh;
+  height: 100vh;
+  width: 86vw;
+  margin: auto;
+  border: 1px solid #dfe6e9;
+  background-color: #ffffff;
+  border-radius: 1em;
+}
+
+.works-container {
+  height: 80%;
+  width: 80vw;
+  border: 1px dotted;
+}
+
 #home {
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 90vh;
 }
 
 #skills {
-  margin: 0 0;
-  background-color: #81ecec;
+  height: 170vh;
+  margin: 0;
+}
+
+#portfolio {
+  height: 80vh;
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
