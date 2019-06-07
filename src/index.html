@@ -4,78 +4,77 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto|Lato&display=swap" rel="stylesheet" />
   <link href="./styles/reset.css" type="text/css" rel="stylesheet" />
   <link href="./styles/main.css" type="text/css" rel="stylesheet" />
   <title>Michael Banzon | Software Engineer</title>
 </head>
 
 <body>
-  <header>
-    <nav class="menu">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
   <div id="home">
-    <div class="name">
-      <h2>Michael Banzon</h2>
-      <p>Software Engineer.</p>
-    </div>
-    <div class="welcome">
+    <header class="content">
+      <div class="name">
+        <h2>Michael Banzon</h2>
+        <p>Software Engineer.</p>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="welcome content">
       <h1>Hello There!</h1>
       <p>I'm Michael, a software engineer and welcome to my website :)<br />Feel free to look around!</p>
     </div>
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+      <polygon fill="white" points="0,50 25,100 0,100" />
+      <polygon fill="white" points="25,100 100,0 100,100" />
+    </svg>
   </div>
-  <div id="about">
+  <div id="about" class="content">
     <div class="about__overview">
       <h4>About Me</h4>
-      <p>Hi I'm Michael Banzon, a software engineer with a passion for web development.
-        I love seeing ideas come to life through different technologies working together,
-        producing something that impacts the lives of many.
+      <p>Hi I'm Michael Banzon, a software engineer with a passion for web development. I love seeing ideas come to life
+        through different technologies working together, producing something that impacts the lives of many.
       </p>
-      <p>&middot;</p>
-      <p>Since the start of my journey into the software industry, I've gained a wide
-        variety of experience. From my CS degree to my time as a QA Engineer, the
-        skillset I've obtained lends itself to my abilities as a software engineer.
-        I'm always in persuit of producing quality work and sharpening my skills in whatever I do.
+      <br />
+      <p>Since the start of my journey into the software industry, I've gained a wide variety of experience. From my CS
+        degree to my time as a QA Engineer, the skillset I've obtained lends itself to my abilities as a software
+        engineer. I'm always in persuit of producing quality work and sharpening my skills in whatever I do.
       </p>
     </div>
     <div class="about__technologies">
-      <h4>Technologies & Tools I Use</h4>
+      <h4>Technologies</h4>
       <div class="about__technologies__list">
-        <div class="front-end">
+        <div class="technology">
           <h4>Front End</h4>
-          <p>HTML5 &middot; CSS</p>
-          <p>JavaScript(ES6) &middot; React &middot; Redux</p>
-          <p>AngualarJS &middot; Backbone </p>
+          <p>HTML5 &middot; CSS &middot; JavaScript(ES6) &middot; React &middot; Redux &middot; AngularJS &middot;
+            Backbone</p>
         </div>
-        <div class="back-end">
+        <div class="technology">
           <h4>Back End</h4>
-          <p>NodeJS &middot; Express</p>
-          <p>Sequelize &middot; PostgreSQL &middot; MySQL</p>
-          <p>Mongoose &middot; MongoDB</p>
+          <p>NodeJS &middot; Express &middot; Sequelize &middot; PostgreSQL &middot; MySQL &middot; Mongoose &middot;
+            MongoDB</p>
         </div>
-        <div class="dev-tools">
+        <div class="technology">
           <h4>Developer Tools</h4>
-          <p>Git &middot; npm</p>
-          <p>Babel &middot; Webpack &middot; Bower</p>
-          <p>Jira &middot; Waffle.io &middot; Slack</p>
+          <p>Git &middot; npm &middot; Babel &middot; Webpack &middot; Bower &middot; Jira &middot; Waffle.io &middot;
+            Slack</p>
         </div>
-        <div class="testing">
+        <div class="technology">
           <h4>Testing</h4>
-          <p>Mocha &middot; Chai</p>
-          <p>Jasmine &middot; Jest</p>
+          <p>Mocha &middot; Chai &middot; Jasmine &middot; Jest</p>
         </div>
       </div>
     </div>
   </div>
-  <div id="portfolio">
+  <div id="portfolio" class="content">
     <div class="works-container">
-      <h4>Recent Work</h4>
+      <h4>Work</h4>
       <div class="project">
         <div class="project__desc">
           <h4>Pomocode</h4>
@@ -111,13 +110,14 @@
     </div>
   </div>
   <footer id="contact">
+    <div class="border"></div>
     <div class="contact-container">
       <p>Questions? Want to work together? Let's get in touch!</p>
       <a href="https://www.linkedin.com/in/michael-banzon/">
-        <img src="./images/In-White-28px-TM.png" alt="LinkedIn" />
+        <img src="./images/In-Blue-34.png" alt="LinkedIn" />
       </a>
       <a href="https://github.com/mrnbanzon">
-        <img src="./images/GitHub-Mark-Light-32px.png" alt="GitHub" />
+        <img src="./images/GitHub-Mark-32px.png" alt="GitHub" />
       </a>
       <p>email: mrnbanzon@gmail.com</p>
     </div>

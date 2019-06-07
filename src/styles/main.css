@@ -3,31 +3,31 @@ body {
   width: 100%;
   margin: 0;
   overflow: auto;
-  font-family: 'Helvetica';
-  color: #808e9b;
+  font-family: 'Lato', sans-serif;
+  color: #091540;
+  background-color: white;
 }
 
 header {
-  position: absolute;
-  z-index: 2;
-  top: 15px;
-  right: 40px;
-  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
 }
 
 nav ul {
+  color: white;
   display: flex;
   justify-content: space-between;
   font-size: 1.1em;
+  font-weight: bold;
 }
 
 nav ul li {
-  margin-left: 2em;
+  margin-left: 2.5em;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: bold;
-  color: #22313f;
 }
 
 h1 {
@@ -39,13 +39,12 @@ h2 {
 }
 
 h4 {
-  font-weight: bold;
   font-size: 1.5em;
-  color: #34495e;
 }
 
 p {
   font-size: 1.1em;
+  line-height: 1.75;
 }
 
 span {
@@ -60,12 +59,12 @@ footer {
   line-height: 1.15;
   min-height: 200px;
   text-align: center;
-  background-color: #4b77be;
-  border-top: solid #3498db 15px;
 }
 
-footer * {
-  color: rgba(255, 255, 255, .86);
+.content {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .name {
@@ -73,93 +72,75 @@ footer * {
 }
 
 .welcome {
-  height: 80%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
-.welcome p {
+#home p {
   line-height: 1.15;
 }
 
+#about > div {
+  margin-bottom: 10%;
+}
+
 .about__overview {
-  margin: 50px auto;
-  max-width: 600px;
-  line-height: 1.75;
-  color: rgba(255, 255, 255, .86);
+  margin: 0 0 0 auto;
+  max-width: 700px;
+  text-align: right;
 }
 
 .about__overview > h4 {
-  color: #ffffff;
-  margin-bottom: 10px;
+  width: 95%;
+  margin-bottom: 1%;
 }
 
 .about__technologies {
-  position: relative;
-  margin: auto;
-  z-index: 2;
-  width: 80%;
-  max-width: 950px;
-  background-color: #ffffff;
-  border-radius: 1em;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.1);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.about__technologies > h4 {
-  padding: 20px 0;
-}
-
-.about__technologies__list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 1em;
-}
-
-.about__technologies__list div > p {
-  margin: 20px 0;
+.technology {
+  display: flex;
 }
 
 .works-container {
+  margin: 0 auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.works-container h3 {
-  margin-top: 10px;
-  margin-bottom: 25px;
-}
-
 .project {
-  margin: 25px 0;
-  width: 1200px;
-  max-width: 90%;
+  margin: 75px 0;
+  width: 90%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .project:nth-child(odd) {
   flex-direction: row-reverse;
+  text-align: right;
 }
 
 .project__desc {
-  line-height: 1.75;
-  text-align: center;
   max-width: 500px;
 }
 
 .project__img {
-  width: 600px;
+  width: 500px;
   text-align: center;
 }
 
 .project__img img {
-  width: 600px;
-  border-radius: 1em;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.1);
+  width: 500px;
+  border-radius: 0.25em;
 }
 
 .contact-container {
@@ -172,27 +153,27 @@ footer * {
   opacity: 0.9;
 }
 
+footer .border {
+  margin: auto;
+  width: 30%;
+  height: 2px;
+  background: radial-gradient(#7692ff 40%, #6decaf 100%);
+}
+
 #home {
-  height: 86vh;
+  height: 115vh;
+  max-height: 1000px;
   padding-top: 15px;
   position: relative;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.1);
+  color: white;
+  background-color: #7692ff;
 }
 
-#about {
-  height: 720px;
-  text-align: center;
-  background-color: #4b77be;
-  border-top: solid #3498db 15px;
-  border-bottom: solid #3498db 15px;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.1);
-}
-
-#portfolio {
-  margin-top: 100px;
-  padding: 10px 0 100px 0;
-  position: relative;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.1);
+#home svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40vh;
 }
 
 @media (max-width: 1200px) {
@@ -200,6 +181,10 @@ footer * {
     flex-direction: column;
   }
 
+  .project__desc {
+    text-align: center;
+  }
+  
   .project__img {
     padding-top: 20px;
     width: 100%;
@@ -217,45 +202,18 @@ footer * {
     width: 80%;
   }
 
-  .about__overview p,
   .project__desc p {
     width: 80%;
     margin: auto;
   }
   
-  .about__technologies__list {
-    grid-template-columns: 1fr;
-  }
-
   .contact-container {
     width: 80%;
-  }
-
-  #home {
-    padding-top: 25px;
-  }
-
-  #portfolio {
-    margin-top: 460px;
   }
 }
 
 @media (max-width: 450px) {
   body {
     font-size: 3.5vw;
-  }
-
-  header {
-    position: relative;
-    right: 0;
-  }
-
-  nav ul li {
-    margin: 0 auto;
-  }
-
-  .name {
-    margin: auto;
-    text-align: center;
   }
 }
